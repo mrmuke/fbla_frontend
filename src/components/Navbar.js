@@ -15,7 +15,7 @@ export default function Navbar(){
   
     return(
       <NavBar expand="lg">
-            <NavBar.Brand >FBLA QUIZ</NavBar.Brand>
+            <NavBar.Brand href="/">FBLA QUIZ</NavBar.Brand>
             <NavBar.Toggle aria-controls="basic-navbar-nav" />
             <NavBar.Collapse id="basic-navbar-nav">
                 
@@ -28,7 +28,7 @@ export default function Navbar(){
                 :
                     <React.Fragment>
                         <Nav.Link href="/dashboard">Dashboard</Nav.Link>
-                        <Nav.Link href="/quizzes">All Quizzes</Nav.Link>
+                        <Nav.Link href="/quizzes">Take Quizzes</Nav.Link>
 
                         <Nav.Link onClick={logOut}>Logout</Nav.Link>
 

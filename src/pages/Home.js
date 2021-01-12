@@ -1,7 +1,7 @@
 
 export default function Home() {
-    return <div><div class="welcome-bg">
-        <div class="welcome-container">
+    return <div><div className="welcome-bg">
+        <div className="welcome-container">
             <h1 style={{ fontSize: '3rem', lineHeight: '3rem', margin: '15px' }}>Welcome to FBLA Quiz</h1>
             <button >
                 Get Started

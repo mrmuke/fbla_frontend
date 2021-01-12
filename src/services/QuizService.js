@@ -26,6 +26,13 @@ export default class QuizService{
   uploadQuiz(data) {
     return axios.post(`${API_URL}/api/quiz/upload`, data)
   }
+  createPlan(data){
+    return axios.post(`${API_URL}/api/quiz/createPlan`,data)
+  }
+  getPlan(){
+    return axios.get(`${API_URL}/api/quiz/plan`)
+  }
+
 
 
     

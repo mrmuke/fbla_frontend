@@ -27,11 +27,8 @@ export default function QuizList(){
 quizService.uploadQuiz(formData)
     }
 
-    if(quizzes.length==0){
-        return <h2 className="quizzes-container text-center">No Quizzes Left to Master</h2>
-    }
-    return <div className="quizzes-container">
-    <h2 style={{textAlign:'center', textDecoration:'underline'}}>Discover Quizzes</h2>
+    return <div style={{backgroundColor:'#1586CA', minHeight:'95vh',display:'flex',justifyContent:'center',alignItems:'center'}}><div className="quizzes-container">
+    <h2 style={{textAlign:'center', textDecoration:'underline'}}>{quizzes.length==0?"No Quizzes Left to Master":"Discover Quizzes"}</h2>
     <button>Upload Quiz</button>
     <input accept="application/pdf" type="file" onChange={selectQuizFile} /> 
     <button onClick={uploadQuiz}> 
@@ -41,7 +38,7 @@ quizService.uploadQuiz(formData)
     {quizzes.map(quiz=>
         <Quiz quiz={quiz} key={quiz.id}/>
     )}
-</div>
+</div></div>
 }
 function Quiz({quiz}){
     return(
