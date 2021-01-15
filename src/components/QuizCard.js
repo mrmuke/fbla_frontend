@@ -12,7 +12,7 @@ export default function QuizCard({quizzes}){
                 <h5>{quiz.description}</h5>
                 <div className="tags">
                   <div className="tag">Business</div>
-                  <div className="tag">Mastery 4</div>
+                  <div className="tag">FBLA</div>
                 </div>
                 <div style={{display:'flex', alignItems:'center',flexDirection:'column', width:'100%', fontSize:'3em'}}>
       

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
 
 :root {
-  --color: #3c3163;
+  --color: #4f97c3;
   --transition-time: 0.5s;
 }
 
@@ -91,8 +91,6 @@ a {
 
 
 .quiz-card .date {
-
-  float:right;
   font-size: 0.75em;
 
   line-height: 1em;
@@ -149,3 +147,22 @@ a {
   }
 }
 
+.home-card{
+  text-align:center;
+  border:2px solid #40AB2C;
+  border-radius:5px;
+}
+.home-card h1{
+  background-color:  #40AB2C;
+  color:white
+}
+.home-card:nth-child(1){
+  margin-right: 10px;
+}
+.home-card:nth-child(2){
+  margin-right: 10px;
+}
+.home-card span{
+  color:#40AB2C;
+  padding:15px;
+}
